@@ -13,6 +13,7 @@ Aplicacion de seguimiento de incidentes de seguridad con arquitectura limpia:
 - Frontend: Next.js + TypeScript + Tailwind + shadcn/ui
 
 ## Descripcion del proyecto
+<img width="1857" height="1067" alt="image" src="https://github.com/user-attachments/assets/25e4f975-5020-43b1-8d79-16fe8b588c54" />
 
 SafeMap es una aplicacion orientada a la visualizacion de incidentes de seguridad en un mapa urbano, con filtros por tipo de incidente y una interfaz clara para consulta rapida.  
 El objetivo es ofrecer un prototipo util y entendible que ayude a las personas a tomar decisiones cotidianas con mayor contexto de riesgo en su zona.
