@@ -1,0 +1,15 @@
+# Git
+.git
+.gitignore
+
+# Frontend build artifacts
+frontend/node_modules
+frontend/.next
+
+# .NET build artifacts
+**/bin
+**/obj
+
+# OS/editor noise
+**/.DS_Store
+**/Thumbs.db

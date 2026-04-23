@@ -1,0 +1,22 @@
+# This blueprint creates two Docker web services on Render: API + Frontend.
+services:
+  - type: web
+    name: safemap-api
+    env: docker
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    healthCheckPath: /health
+    envVars:
+      # Add your real frontend URL after first deploy, e.g. https://safemap-web.onrender.com
+      - key: FRONTEND_ORIGINS
+        value: https://YOUR_FRONTEND_DOMAIN.onrender.com
+
+  - type: web
+    name: safemap-web
+    env: docker
+    dockerfilePath: ./frontend/Dockerfile
+    dockerContext: ./frontend
+    envVars:
+      # Set this to your API Render URL, e.g. https://safemap-api.onrender.com
+      - key: NEXT_PUBLIC_API_BASE_URL
+        value: https://YOUR_API_DOMAIN.onrender.com

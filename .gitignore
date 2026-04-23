@@ -1,0 +1,14 @@
+# Node / Next.js
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+
+# .NET build outputs
+SafeMap/**/bin/
+SafeMap/**/obj/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
